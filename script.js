@@ -47,18 +47,79 @@ console.log(user);
 console.log(user);
 
 function sendMessage(msg) {
-  alert(msg);
+  //alert(msg);
   console.log(msg);
 }
 
-sendMessage("HELLO WORLD");
-let mesajGonder = new (function(msg) {
-  console.log(msg);
-})();
+// sendMessage("HELLO WORLD");
+// let mesajGonder = new (function(msg) {
+//   console.log(msg);
+// })();
 
-mesajGonder("msgsgsggs");
+//mesajGonder("msgsgsggs");
 
 function doNothing() {
   return;
 }
-doNothing();
+console.log(doNothing() === undefined);
+
+console.log(Boolean("0"));
+console.log(Boolean(0));
+console.log(Boolean(1));
+console.log(Boolean(-5));
+console.log(10 ** 4); //10*10*10*10
+
+let counter = 0;
+counter++;
+console.log(counter);
+counter--;
+console.log(counter);
+++counter;
+console.log(counter--);
+console.log(counter);
+console.log(counter++);
+console.log(++counter);
+console.log(counter++);
+
+let user2 = {
+  Name: "Ugur",
+  isAdmin: true,
+  isStudent: false
+};
+
+if (user2.isAdmin === true && user2.isStudent === false) {
+  console.log("message 1st if else");
+}
+
+if (user2.isAdmin && user2.isStudent) {
+  console.log("message 2nd if else");
+}
+if (user2.isAdmin || user2.isStudent) {
+  console.log("message 3rd if else");
+}
+
+var obj = {
+  name: "Carrot",
+  _for: "Max", // 'for' is a reserved word, use '_for' instead.
+  details: {
+    color: "orange",
+    size: 12
+  }
+};
+console.log(obj);
+
+let arr = []; //or new Array();
+arr = ["elma", "armut", "kel mahmut"];
+arr.forEach(function(element) {
+  console.log(element);
+});
+arr.push("kavun");
+arr.forEach(function(element) {
+  console.log(element);
+});
+arr.pop();
+
+for (let item in arr) {
+  console.log(+item + 1 + "." + "item " + arr[item]);
+  item++;
+}
