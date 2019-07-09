@@ -17,3 +17,8 @@ dosya birleştirme ==> gulp-concat
 vs.
 
 gulp.task()
+
+WebPack
+
+Parcel
+npm install -g
