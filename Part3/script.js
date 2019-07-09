@@ -49,15 +49,10 @@ const Human = class {
     this.age = age;
   }
     get isOlderEighteen(){
-    if(this.age>18){
-      console.log("older than 18");
-    }
-    else if(this.age === 18){
-      console.log("18");
-    }
-    else{
-      console.log("Younger than 18");
-    }
+    return this.age > 18 ? "older" : "younger";  
+  }
+  static test(){
+    
   }
 }
 

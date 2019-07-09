@@ -125,3 +125,32 @@ class Man extends Human {
         this.gender = 'Male';
     }
 }
+
+// human.js
+
+// variables
+
+export const AGE = 24;
+export const TYPE = 'Human';
+
+
+
+// function
+
+export default function Human(name) {
+    return name;
+}
+
+
+export default { AGE, TYPE };
+
+
+// import file
+
+import { AGE, TYPE } from 'human.js';
+
+
+
+// Only one exported file with default
+
+import Human from 'human.js'
