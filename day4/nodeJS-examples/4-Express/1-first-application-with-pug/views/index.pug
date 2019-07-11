@@ -1,0 +1,14 @@
+extends layout
+block content
+    div.main-area
+        - var welcomeMessage = 'Welcome to Home Page'
+        h1
+            | #{name} #{surname}
+        h2
+            =welcomeMessage
+        ul
+            span Friend list:
+            each val, index in friends
+                li= index + ': ' + val
+    //- Footer Component
+    include components/footer
