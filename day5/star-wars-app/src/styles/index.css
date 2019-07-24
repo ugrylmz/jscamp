@@ -1,12 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,500&display=swap");
+
 :root {
   --main-color: #ebd71c;
+  --solid-color: #cccb4a;
   --main-color-box-shadow: #f5cf23bd;
+  --grey-color: #aaa;
 }
 
 /* typography */
 
 body {
-  font-family: "Lato", Helvetica, sans-serif;
+  font-family: "Roboto Mono", monospace;
   margin: 0;
   padding: 0;
 }
@@ -14,7 +18,10 @@ body {
 h1 {
   color: var(--main-color);
 }
-
+h2 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+}
 a {
   color: var(--main-color);
   text-decoration: none;
@@ -40,7 +47,7 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.d-flex-row div {
+.d-flex-row > div {
   margin: 0 30px;
 }
 
@@ -107,31 +114,25 @@ ul {
 }
 
 /* custom styles */
-main img#headerBanner {
-  width: 200px;
-}
 
-main {
+.st-container {
   background: url(../img/stars-bg.jpg) center center;
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  font-family: "Droid Sans", arial, verdana, sans-serif;
   font-weight: 700;
   color: var(--main-color);
   background-color: #000;
   overflow: hidden;
   position: relative;
 }
-
-/* featured movies area */
-.filmCard {
-  border: 1px solid var(--main-color);
-  border-radius: 50px 5px;
-  transition: border-width 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+.st-container > div {
+  background: url(/static/media/openBanner.8eb27e08.webp) center;
+  background-size: cover;
 }
 
-.filmCard:hover {
-  border-width: 5px;
-  box-shadow: 1px 1px 7px var(--main-color-box-shadow);
+.st-container img#headerBanner {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
 }

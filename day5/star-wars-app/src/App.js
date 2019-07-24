@@ -6,11 +6,13 @@ import FeaturedCharacters from "./components/FeaturedCharacters";
 class App extends React.Component {
   render() {
     return (
-      <main className="d-header">
+      <div className="st-container">
         <Header />
-        <FeaturedMovies />
-        <FeaturedCharacters />
-      </main>
+        <main className="d-header">
+          {/* <FeaturedMovies /> */}
+          <FeaturedCharacters />
+        </main>
+      </div>
     );
   }
 }

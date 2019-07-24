@@ -2,9 +2,9 @@ import React from "react";
 import bannerPath from "../img/star-wars-banner.jpg";
 const Header = () => {
   return (
-    <div>
+    <header>
       <img src={bannerPath} alt="Star Wars Banner" id="headerBanner" />
-    </div>
+    </header>
   );
 };
 export default Header;
