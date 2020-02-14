@@ -1,9 +1,9 @@
 ### Javascript'e Giriş ve Temel Kavramlar
 
--Javascript ile Asenkron, Nesne Yönelimli ve Fonksiyonel Programlama
--İleri JavaScript, EcmaScript, Frontend Geliştirme Araçları, Git
--JS Frameworkleri ile Single Page Application (SPA) Geliştirme
--Node.js ile Backend uygulama geliştirme
+Asynchronous, Object Oriented and Functional Programming with Javascript
+-Advanced JavaScript, EcmaScript, Frontend Development Tools, Go
+-Single Page Application (SPA) Development with JS Frameworks
+Backend application development with Node.js
 
 <table style="text-align: left;">
         <thead>
